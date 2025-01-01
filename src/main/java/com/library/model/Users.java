@@ -2,6 +2,7 @@ package com.library.model;
 
 public class Users {
 
+	
     private int id;
     private String username;
     private String email;

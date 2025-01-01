@@ -14,6 +14,7 @@
             <th>Email</th>
             <th>Status</th>
         </tr>
+        
         <c:forEach var="user" items="${users}">
             <tr>
                 <td>${user.id}</td>

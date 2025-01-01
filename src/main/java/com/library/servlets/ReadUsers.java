@@ -19,6 +19,7 @@ public class ReadUsers extends HttpServlet {
     public ReadUsers() {
         super();
     }
+    
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         UserServices service = new UserServices();
