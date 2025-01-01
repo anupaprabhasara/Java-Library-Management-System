@@ -11,7 +11,7 @@ public class DBConnect {
 		String password = "123456";
 		
 		Class.forName("com.mysql.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/database?characterEncoding=utf8",username,password);
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/librarymanagement?characterEncoding=utf8",username,password);
 	
 		return con;
 	}

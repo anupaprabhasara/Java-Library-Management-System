@@ -39,7 +39,7 @@ public class readBooks extends HttpServlet {
 		
 		request.setAttribute("books", books);
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("booktest.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/booktest.jsp");
 		
 		dispatcher.forward(request, response);
 	}
