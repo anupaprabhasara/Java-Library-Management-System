@@ -1,12 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
-  <display-name>Java-Library-Management-System</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-  </welcome-file-list>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<display-name>Java-Library-Management-System</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+	
+	  <!-- Template Start -->
+  <servlet>
+    <servlet-name>Books</servlet-name>
+    <jsp-file>/TEMPcard.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Books</servlet-name>
+    <url-pattern>/books</url-pattern>
+  </servlet-mapping>
+  <!-- Template End -->
+  
+    <!-- Template Start -->
+  <servlet>
+    <servlet-name>aboutUs</servlet-name>
+    <jsp-file>/aboutUs.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>aboutUs</servlet-name>
+    <url-pattern>/about</url-pattern>
+  </servlet-mapping>
+  <!-- Template End -->
+  
+  
+      <!-- Template Start -->
+  <servlet>
+    <servlet-name>contactUs</servlet-name>
+    <jsp-file>/contactUs.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>contactUs</servlet-name>
+    <url-pattern>/contact</url-pattern>
+  </servlet-mapping>
+  <!-- Template End -->
+  
+  <!-- Template Start -->
+  <servlet>
+    <servlet-name>termsandcondition</servlet-name>
+    <jsp-file>/TermsAndCondition.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>termsandcondition</servlet-name>
+    <url-pattern>/terms</url-pattern>
+  </servlet-mapping>
+  <!-- Template End -->
+  
+    <!-- Template Start -->
+  <servlet>
+    <servlet-name>privacy</servlet-name>
+    <jsp-file>/PrivacyPolicy.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>privacy</servlet-name>
+    <url-pattern>/privacy</url-pattern>
+  </servlet-mapping>
+  <!-- Template End -->
+  
+  <!-- Template Start -->
+  <servlet>
+    <servlet-name>FAQ</servlet-name>
+    <jsp-file>/FAQ.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FAQ</servlet-name>
+    <url-pattern>/faq</url-pattern>
+  </servlet-mapping>
+  <!-- Template End -->
+  
+    <!-- Template Start -->
+  <servlet>
+    <servlet-name>SignUp</servlet-name>
+    <jsp-file>/register.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignUp</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  <!-- Template End -->
+  
+      <!-- Template Start -->
+  <servlet>
+    <servlet-name>SignIn</servlet-name>
+    <jsp-file>/login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignIn</servlet-name>
+    <url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+  <!-- Template End -->
+  
+      <!-- Servlet Definition -->
+    <servlet>
+        <servlet-name>readBooks</servlet-name>
+        <servlet-class>com.library.servlets.readBooks</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>readBooks</servlet-name>
+        <url-pattern>/rdbooks</url-pattern>
+    </servlet-mapping>
+	
+	
 </web-app>

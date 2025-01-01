@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DBConnect {
 
-	private static Connection getConnection() throws ClassNotFoundException, SQLException {
+	public static Connection getConnection() throws ClassNotFoundException, SQLException {
 		String username = "root";
 		String password = "123456";
 		
